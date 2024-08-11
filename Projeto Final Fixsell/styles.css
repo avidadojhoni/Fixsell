@@ -44,6 +44,11 @@ header{
     background-color: #004680;
     color: #EDEDED;
 }
+#menuTopo a :hover{
+    transition: 
+    background-color 250ms ease-in-out;
+    background-color: transparent;
+}
 
 /*Rodape*/
 
