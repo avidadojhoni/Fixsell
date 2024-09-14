@@ -71,3 +71,53 @@ footer{
     text-decoration: none;
     text-overflow: inherit;
 }
+
+
+/*------  Index  ------*/
+
+.bloco{
+    width: 100%;
+}
+
+#inicio{
+    background: linear-gradient(
+        to left,
+        #004844,
+        #008cae
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+#logo{
+    width: 200px;
+}
+
+#welcometexto{
+    font-weight: bold;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+#welcometexto h1{
+    font-size: xx-large;
+    padding-bottom: 12px;
+}
+#welcometexto h2{
+    font-size: large;
+}
+
