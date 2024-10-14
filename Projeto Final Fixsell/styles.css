@@ -298,25 +298,9 @@ footer{
     z-index: 3;
 }
 
-/* ---------- Loja Online ---------- */
+/* ---------- Titulos Subpáginas ---------- */
 
-/* ---------- Loja Fisica ---------- */
-
-/* ---------- Assistência ---------- */
-
-/* --- Contato/Trabalhe Conosco ---- */
-
-/* -------- Sobre/História --------- */
-
-#sobre{
-    background: linear-gradient(
-        to top,
-        #3c9692,
-        #008f88
-    );
-}
-
-#tituloHist{
+.tituloSubpages{
     height: 25vmin;
     display: flex;
     flex-direction: column;
@@ -325,7 +309,7 @@ footer{
     padding: 20px;
 }
 
-#tituloHist h1{
+.tituloSubpages h1{
     font-weight: bold;
     color: whitesmoke;
     display: flex;
@@ -336,9 +320,31 @@ footer{
     font-size: 40px;
 }
 
-#tituloHist h2{
+.tituloSubpages h2{
     color: whitesmoke;
     font-size: 20px;
+}
+
+/* ---------- Loja Online ---------- */
+
+/* ---------- Loja Fisica ---------- */
+
+/* ---------- Assistência ---------- */
+
+/* --- Contato/Trabalhe Conosco ---- */
+
+#contato{
+    background-color: #21A2BF;
+}
+
+/* -------- Sobre/História --------- */
+
+#sobre{
+    background: linear-gradient(
+        to top,
+        #3c9692,
+        #008f88
+    );
 }
 
 #fotoHist{
