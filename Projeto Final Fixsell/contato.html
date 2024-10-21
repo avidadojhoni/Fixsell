@@ -24,27 +24,62 @@
         </header>
         <!-- Fim Topo -->
 
-        <main id="contato">
+        <main class="contato">
             <section class="tituloSubpages">
                 <h1>Contato</h1>
                 <h2>Te Atenderemos Quando Pudermos</h2>
             </section>
+            <div id="caixaFormContato">
             <section id="formContato">
-                <div>
-                    <form action="" method="post" autocomplete="off">
-                        <label for="inome">Nome:</label>
-                        <input type="text" name="nome" id="inome" required>
+                <form action="" method="post" autocomplete="on">
+                    <div id="dadosContato">
 
-                        <label for="isobrenome">Sobrenome:</label>
-                        <input type="text" name="sobrenome" id="isobrenome">
-                        
-                        <label for="itexto">Descreva a sua necessidade:</label>
-                        <input type="text" name="textocontato" id="itexto" required minlength="15">
+                        <div>
+                            <label for="inome">Nome:</label>
+                            <input type="text" name="nome" id="inome" required autocomplete="name">
+                        </div>
 
-                        <input type="submit" value="Enviar">
-                    </form>
-                </div>
+                        <div>
+                            <label for="isobrenome">Sobrenome:</label>
+                            <input type="text" name="sobrenome" id="isobrenome" autocomplete="family-name">
+                        </div>
+
+                        <div>
+                            <label for="iemailfeedback">Email:</label>
+                            <input type="email" name="emailfeedback" id="iemailfeedback" autocomplete="email">
+                        </div>
+ 
+                        <div>
+                            <fieldset>
+                                <legend>Motivo do Contato:</legend>
+
+                                <div id="motivoContato">
+                                    <input type="radio" name="motivo" id="imotivo1">
+                                    <label for="imotivo1">Crítica / Reclamação</label>
+                                </div>
+
+                                <div id="motivoContato">
+                                    <input type="radio" name="motivo" id="imotivo2">
+                                    <label for="imotivo2">Sugestão</label>
+                                </div>
+                                
+                                <div id="motivoContato">
+                                    <input type="radio" name="motivo" id="imotivo3">
+                                    <label for="imotivo3">Outros</label>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                    </div>
+                
+                    <div id="textoContato">
+                        <label for="itextoContato">Descreva a sua necessidade:</label><br>
+                        <textarea name="textoContato" id="itextoContato" cols="30" rows="10" placeholder="Digite Aqui..."></textarea>
+                        <input type="submit" value="Enviar" id="Enviar">
+                    </div>
+                </form>
             </section>
+            </div>
         </main>
 
         <!-- Rodapé -->
