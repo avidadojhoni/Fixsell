@@ -386,6 +386,16 @@ footer{
     width: 50%; /*Medida Relativa */
 }
 
+#enviarCurriculo{
+    display: flex;
+    flex-direction: column;
+}
+
+#Enviar:hover{
+    transition: all 150ms ease-in-out;
+    background-color: #004680;
+    color: whitesmoke;
+}
 
 
 /* -------- Sobre/História --------- */
