@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
+
 <body id="#">
         <!-- Topo -->
         <header>
@@ -24,9 +25,57 @@
         </header>
         <!-- Fim Topo -->
 
-        <main>
-           <p>Esse é o conteúdo principal da Página. Ainda não fiz nada, mas por enquanto, fique com essa impressionante foto de um catioro sorridente. Bom Dia!</p>
-           <img src="https://envato-shoebox-0.imgix.net/39fa/de2e-9f1e-423e-9cd1-c9b4d3745baf/u5-64.jpg?auto=compress%2Cformat&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&w=700&fit=max&markalign=center%2Cmiddle&markalpha=18&s=0257daf68a84c954053c857d358b727a" alt="">
+        <main class="lojaOnline">
+            <section class="tituloSubpages">
+                <h1>Fixsell Store</h1>
+                <h2>Peças de Qualidade para o seu equipamento, do seu jeito</h2>
+            </section>
+
+            <!-- Slider - Banner Principal -->
+            <section class="sliderLojaOnline">
+
+                <div class="slides">
+
+                    <!-- Botões Radio - Selecionadores -->
+                    <input type="radio" name="btn-radio" id="radio1">
+                    <input type="radio" name="btn-radio" id="radio2">
+                    <input type="radio" name="btn-radio" id="radio3">
+                    <input type="radio" name="btn-radio" id="radio4">
+
+                    <!-- Conteudo -->
+                    <div class="slide first">
+                        <img src="https://cdn.dribbble.com/users/476251/screenshots/2619255/attachments/523315/placeholder.png" alt="Imagem 1">
+                    </div>
+                    <div class="slide">
+                        <img src="https://pulsephotography.com.au/wp-content/uploads/2017/10/16x9-placeholder.jpg" alt="Imagem 2">
+                    </div>
+                    <div class="slide">
+                        <img src="https://www.jacksonsquareshopping.co.uk/wp-content/uploads/2016/12/placeholder-1920x1080-copy-5.png" alt="Imagem 3">
+                    </div>
+                    <div class="slide">
+                        <img src="https://reviverestore.org/wp-content/uploads/2017/05/placeholder-image-cropped.jpg" alt="Imagem 4">
+                    </div>
+
+
+                    <!-- Navegação -->
+                     <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                     </div>
+
+                    <div class="manual-navigation">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+                </div>
+
+
+            </section> <!-- Fim Slider / Banner -->
+
         </main>
 
         <!-- Rodapé -->
@@ -40,5 +89,25 @@
                     <li><a href="#">Voltar ao Topo</a></li>
                 </ul>
         </footer>
+
+        <script> // Sim, é Javascript
+
+            let count = 1;
+            document.getElementById("radio1").checked = true;
+
+
+            setInterval( function(){
+                nextImage();
+            }, 5000)
+
+            function nextImage(){
+                count++;
+                if(count>4){
+                    count = 1;
+                }    
+                document.getElementById("radio"+count).checked = true;
+            }
+
+        </script>
 </body>
 </html>

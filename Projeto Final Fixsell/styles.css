@@ -3,6 +3,8 @@
 
 :root{
     --altura-topo: 80px;
+    --width-slider: 100%;
+    scroll-behavior: smooth;
 }
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -334,6 +336,111 @@ footer{
 }
 
 /* ---------- Loja Online ---------- */
+
+.lojaOnline{
+    background-color: #004680; 
+}
+
+.sliderLojaOnline{
+    margin: 0 auto;
+    width: var(--width-slider);
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 1s;
+}
+
+.slide img{
+    width: var(--width-slider);
+}
+
+.manual-navigation{
+    position: absolute;
+    width: var(--width-slider);
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #008cae;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 15px;
+}
+
+.manual-btn:hover{
+    background-color: #008cae;
+}
+
+#radio1:checked ~ .first{
+    margin: 0;
+}
+#radio2:checked ~ .first{
+    margin: -12.5%;
+}
+#radio3:checked ~ .first{
+    margin: -25%;
+}
+#radio4:checked ~ .first{
+    margin: -37.5%;
+}
+
+.navigation-auto div{
+    border: 2px solid #004680;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: var(--width-slider);
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 15px;
+}
+
+.navigation-auto, .manual-navigation{
+    margin-top: 50%;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #008cae;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #008cae;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #008cae;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #008cae;
+}
+
 
 /* ---------- Loja Fisica ---------- */
 
