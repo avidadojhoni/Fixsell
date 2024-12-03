@@ -473,6 +473,48 @@ footer{
 
 /* ---------- Loja Fisica ---------- */
 
+.fisica{
+    background-color: #1790bf;
+}
+
+#mapa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mapa iframe{
+    border-radius: 30px;
+    border: 8px solid #004680;
+    width: 80%;
+    height: 450px;
+}
+
+#mapa h2{
+    color: white;
+    font-size: 3vh;
+    padding: 20px 0 20px 0;
+}
+
+#mapa h2::after{
+    content:"";
+    height: 4px;
+    width: 0%;
+    background-color: #004680; /*Cor da Linha*/
+    display: block;
+    transition: .5s ease-in-out;
+}
+
+#mapa h2:hover::after{
+    content:"";
+    height: 4px;
+    width: 100%;
+    background-color: #004680; /*Cor da Linha*/
+    display: block;
+    transition: .5s ease-in-out;
+}
+
 /* ---------- Assistência ---------- */
 
 .assistencia{
