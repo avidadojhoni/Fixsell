@@ -357,23 +357,23 @@ footer{
     overflow: hidden;
 }
 
-.slides{
+.sliderLojaOnline .slides{
     width: 400%;
     height: auto;
     display: flex;
 }
 
-.slides input{
+.sliderLojaOnline .slides input{
     display: none;
 }
 
-.slide{
+.sliderLojaOnline .slide{
     width: 25%;
     position: relative;
     transition: 1s;
 }
 
-.slide img{
+.sliderLojaOnline .slide img{
     width: var(--width-slider);
 }
 
@@ -657,5 +657,76 @@ footer{
     font-size: 40px;
     padding-bottom: 20px;
     color: #004844;
+}
+
+/* -------- Avaliações --------- */
+
+.avaliacoes{
+    background-color: #4bafc8;
+}
+
+.sliderAvaliacoes{
+    margin: 0 auto;
+    width: var(--width-slider);
+    overflow: hidden;
+    height: 40vh;
+    padding-bottom: 6vh;
+}
+
+.sliderAvaliacoes .slides{
+    width: 400%;
+    height: auto;
+    display: flex;
+    padding: 20px;
+    background-color: whitesmoke;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.sliderAvaliacoes .slides input{
+    display: none;
+}
+
+.sliderAvaliacoes .slide{
+    width: 25%;
+    position: relative;
+    transition: 1s;
+}
+
+.sliderAvaliacoes .slide img{
+    border-radius: 50%;
+    height: 30vh;
+    object-fit: contain;
+    padding: 20px;
+}
+
+#avaliacao{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#textoAvaliacao{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+}
+
+#textoAvaliacao h2{
+    font-size: larger;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+#textoAvaliacao h3{
+    font-size: large;
+    padding: 5px;
+}
+
+#textoAvaliacao p{
+    text-align: justify;
+    padding: 15px;
 }
 
