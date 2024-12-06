@@ -355,12 +355,18 @@ footer{
     margin: 0 auto;
     width: var(--width-slider);
     overflow: hidden;
+    padding-bottom: 6vh;
+    height: 50vh;
 }
 
 .sliderLojaOnline .slides{
     width: 400%;
     height: auto;
     display: flex;
+    padding: 20px;
+    background-color: whitesmoke;
+    align-items: flex-end;
+    overflow: hidden;
 }
 
 .sliderLojaOnline .slides input{
@@ -374,7 +380,56 @@ footer{
 }
 
 .sliderLojaOnline .slide img{
-    width: var(--width-slider);
+    height: 40vh;
+    object-fit: contain;
+    padding: 20px 0;
+}
+
+#publiLoja{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#textoPubli{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 40%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#textoPubli h2{
+    font-size: larger;
+    font-weight: bolder;
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#textoPubli h3{
+    font-size: large;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 25px;
+}
+
+#textoPubli a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #004680;
+    transition: all 200ms ease;
+    font-size: 20px;
+}
+
+#textoPubli a:hover {
+    transition: all 200ms ease;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #004680;
+    font-size: 25px;
 }
 
 .manual-navigation{
