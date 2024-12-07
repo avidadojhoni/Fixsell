@@ -674,6 +674,11 @@ footer{
     padding: 20px;
 }
 
+#fotoHist img{
+    border: #004844 solid 8px;
+    border-radius: 30px;
+}
+
 #textoHist{
     padding: 10px;
     text-align: justify;
